@@ -185,7 +185,7 @@ if (isset($_GET['tracking'])) {
                         </tbody>
                     </table>
 
-                    <h3 class="w3l_header w3_agileits_header">Shipment <span> History</span></h3></div>
+                   <!-- <h3 class="w3l_header w3_agileits_header">Shipment <span> History</span></h3></div>
                     
                     
                     <div class="table-responsive">
@@ -225,7 +225,7 @@ if (isset($_GET['tracking'])) {
 
             </tbody>
             </table>
-            </div>
+            </div>-->
             </div>
         </div>';
         } else {
