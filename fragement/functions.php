@@ -184,9 +184,9 @@ function foot()
                                     </div>
                                     <p itemprop="description"></p>
                                     <ul class="social-btn">
-                                        <li><a href="front/#" title="" itemprop="url"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="front/#" title="" itemprop="url"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="front/#" title="" itemprop="url"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="" title="" itemprop="url"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="" title="" itemprop="url"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="" title="" itemprop="url"><i class="fa fa-facebook"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
