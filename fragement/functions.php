@@ -51,7 +51,7 @@ function topnav()
     <div class="logo-menu-sec">
         <div class="logo-menu">
             <div class="logo">
-                <a itemprop="url" href="home" title=""><img itemprop="image" src="yolkassets/upload/'.app1('applogo').'" alt="" /></a>
+                <a itemprop="url" href="home" title=""><img itemprop="image" src="yolkassets/upload/'.app1('applogo').'" alt=""  style="width:200px;height:100px;"/></a>
             </div>
             <div class="quick-contact">
                 <ul>
