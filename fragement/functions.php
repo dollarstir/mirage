@@ -131,7 +131,7 @@ function topnav()
         <div class="container">
             <div class="responsive-logo">
                 <div class="logo">
-                    <a itemprop="url" href="front/home" title=""><img itemprop="image" src="yolkassets/upload/'.app1('applogo').'" alt="" /></a>
+                    <a itemprop="url" href="front/home" title=""><img itemprop="image" src="yolkassets/upload/'.app1('applogo').'" alt="" style="width:200px;height:100px;" /></a>
                 </div>
             </div>
             <span class="responsive-btn"><i class="fa fa-list"></i></span>
