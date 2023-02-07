@@ -22,6 +22,12 @@ function begin($title = '')
         <link rel="stylesheet" href="front/css/responsive.css" type="text/css" /><!-- Responsive -->
         <link rel="stylesheet" href="front/css/colors/color.css" type="text/css" /><!-- Color -->
         <link rel="stylesheet" href="front/layerslider/css/layerslider.css" type="text/css"><!-- Layer Slider -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css" /><!-- Fontawesome -->
+        
+        <style>
+        .bs4-order-tracking{margin-bottom: 30px;overflow: hidden;color: #878788;padding-left: 0px;margin-top: 30px}.bs4-order-tracking li{list-style-type: none;font-size: 13px;width: 25%;float: left;position: relative;font-weight: 400;color: #878788;text-align: center}.bs4-order-tracking li:first-child:before{margin-left: 15px !important;padding-left: 11px !important;text-align : left !important}.bs4-order-tracking li:last-child:before{margin-right: 5px !important;padding-right: 11px !important;text-align : right !important}.bs4-order-tracking li>div{color: #fff;width: 29px;text-align: center;line-height: 29px;display: block;font-size: 12px;background: #878788;border-radius: 50%;margin: auto}.bs4-order-tracking li:after{content: '';width: 150%;height: 2px;background: #878788;position: absolute;left: 0%;right: 0%;top: 15px;z-index: -1}.bs4-order-tracking li:first-child:after{left: 50%}.bs4-order-tracking li:last-child:after{left: 0%!important;width: 0% !important}.bs4-order-tracking li.active{font-weight: bold;color: #dc3545}.bs4-order-tracking li.active>div{background: #dc3545}.bs4-order-tracking li.active:after{background: #dc3545}.card-timeline{background-color: #fff;z-index: 0}
+        
+        </style>
     
     </head>';
 }
@@ -263,6 +269,7 @@ function scripts()
     echo '<script type="text/javascript" src="front/js/modernizr-2.0.6.js"></script><!-- Modernizr -->
     <script type="text/javascript" src="front/js/jquery-2.2.2.js"></script><!-- jQuery -->
     <script type="text/javascript" src="front/js/bootstrap.min.js"></script><!-- Bootstrap -->
+    script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script><!-- bundel -->
     <script type="text/javascript" src="front/js/scrolltopcontrol.js"></script><!-- Scroll To Top -->
     <script type="text/javascript" src="front/js/jquery.scrolly.js"></script><!-- Scrolly -->
     <script type="text/javascript" src="front/js/owl.carousel.min.js"></script><!-- Owl Carousal -->
