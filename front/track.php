@@ -104,7 +104,7 @@ begin();
     }
 
     .card-timeline {
-      background-color: #ffb400;
+      background-color: #fff;
       z-index: 0
     }
   </style>
