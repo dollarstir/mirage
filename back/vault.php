@@ -25,7 +25,7 @@ staffsidebar();
                     <div class="col-12">
                         <div class="QA_section">
                             <div class="white_box_tittle list_header">
-                                <h4>Table</h4>
+                                <h4>VAULT NUMBER : <?php gdetail($_SESSION['vaultuser']['gold_id'], 'vaultnumber'); ?> </h4>
                                 <div class="box_right d-flex lms_block">
                                     <div class="serach_field_2">
                                         <!-- <div class="search_inner">
@@ -50,7 +50,72 @@ staffsidebar();
                                         <td>VAULT NUMBER </td>
                                         <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'vaultnumber'); ?></td>
                                     </tr>
-                                </table>
+                                    <tr>
+                                        <td>ITEM </td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'item'); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CARAT </td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'carat'); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>WEIGHT </td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'weight'); ?></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>PURITY </td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'purity'); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>DATE  DEPOSITED</td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'date_added'); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>DEMURAGE CHARGE</td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'charge'); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>NAME OF DEPOSITOR</td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'depositer'); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>DATE OF BIRTH</td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'dob'); ?></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>ADDRESS</td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'address'); ?></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>COUNTRY</td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'country'); ?></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>NATIONALITY</td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'nationality'); ?></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>SEX</td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'gender'); ?></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>OCCUPATION</td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'occupation'); ?></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>NEXT OK KIN</td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'next_kin'); ?></td>
+                                    </tr>
+                                
+                                        </table>
+
                             </div>
                         </div>
                     </div>
