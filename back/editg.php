@@ -123,7 +123,7 @@ begin('Edit Gold'); ?>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Next of Kin</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="next_kin">
+                                        placeholder="" name="next_kin" value="<?php gdetail($myid, 'next_kin'); ?>">
                                 </div>
 
                                 
