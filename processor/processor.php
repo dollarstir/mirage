@@ -33,6 +33,11 @@ if (isset($_GET['action'])) {
             login($email, $password);
             break;
 
+        case 'vault':
+            extract($_POST);
+            vaultlogin($vault);
+            break;
+
         case 'deletepackage':
             extract($_POST);
             deletepackage($id);

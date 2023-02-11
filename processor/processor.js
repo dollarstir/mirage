@@ -73,6 +73,23 @@ $(function(){
               });
 
         }
+
+        else if(response == 'loginvault'){
+
+          swal({
+              title: "Access granted!",
+              text: "will be redirected soon",
+              timer: 2000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location="vault";
+            });
+
+      }
         else if(response == 'Updated Successfully'){
 
             swal({
@@ -241,6 +258,28 @@ $('.login').submit(function(e){
  
   var staff = {
       url: 'processor/processor.php?action=login',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
+
+// login to vault
+
+$('.vault').submit(function(e){
+
+  e.preventDefault();
+ 
+  var staff = {
+      url: 'processor/processor.php?action=vault',
       type: 'post',
       data: new FormData(this),
       cache: false,

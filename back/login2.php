@@ -32,7 +32,7 @@ begin('Vault Authenticator'); ?>
                                                 
                                                 <div class="">
                                                     <input type="password" class="form-control"
-                                                        placeholder="Enter Vault Number" name="vaut">
+                                                        placeholder="Enter Vault Number" name="vault">
                                                 </div>
                                                 
                                                 <button  class="btn_1 full_width text-center">Open Vault</button>

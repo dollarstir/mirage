@@ -395,6 +395,21 @@ function login($email, $password)
     }
 }
 
+// vault login
+
+function vaultlogin($vault)
+{
+    if (authenticate('gold', [['vaultnumber', '=', $vault]]) == 'success') {
+        if (loginauth('gold', 'vaultuser', [['vaultnumber', '=', $vault]]) == 'success') {
+            echo 'loginvault';
+        } else {
+            echo 'failed to open vault';
+        }
+    } else {
+        echo 'Incorrect Vault Number';
+    }
+}
+
 function app($data)
 {
     $d = fetchall('settings');
