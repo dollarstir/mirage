@@ -251,6 +251,13 @@ function pdetail($id, $data)
     echo $dd[0][$data];
 }
 
+// gold details
+function gdetail($id, $data)
+{
+    $dd = customfetch('gold', [['gold_id', '=', $id]]);
+    echo $dd[0][$data];
+}
+
 function editpackage($id, $item, $status, $origin, $current, $destination, $pickupdate, $pickuptime, $edeliverydate, $departuretime, $weight, $shippername, $shipperaddress, $recievername, $recieveraddress, $paymode, $shipmode, $remarks, $trackid, $hdate, $htime)
 {
     if (empty(trim($item))) {
@@ -338,7 +345,7 @@ function showgold()
         <td>'.$row['charge'].'</td>
         <td>'.$row['date_added'].'</td>
         <td>'.$row['depositer'].'</td>
-        <td><a href="editpackage?id='.$row['id'].'" class="status_btn">Edit</a><button class="btn btn-danger btn-sm deletep" id="'.$row['id'].'">Delete</button></td>
+        <td><a href="editgold?id='.$row['gold_id'].'" class="status_btn">Edit</a><button class="btn btn-danger btn-sm deleteg" id="'.$row['gold_id'].'">Delete</button></td>
     </tr>';
     }
 }

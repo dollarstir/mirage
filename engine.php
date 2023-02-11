@@ -95,6 +95,13 @@ $router = new Router([
     ),
 
     new Route(
+        '/editgold',
+        function ($context) {
+            return Viewer::view('back/editg.php', $context);
+        }
+    ),
+
+    new Route(
         '/login',
         function ($context) {
             return Viewer::view('back/auth.php', $context);
