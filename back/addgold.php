@@ -59,7 +59,7 @@ begin('Deposit Gold'); ?>
 
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Date  Deposited </label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    <input type="date" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="date_added">
                                 </div>
 
@@ -73,7 +73,7 @@ begin('Deposit Gold'); ?>
 
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Date of Birth</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    <input type="date" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="dob">
                                 </div>
 
