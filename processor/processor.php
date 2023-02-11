@@ -15,6 +15,10 @@ if (isset($_GET['action'])) {
             editpackage($id, $item, $status, $origin, $current, $destination, $pickupdate, $pickuptime, $edeliverydate, $departuretime, $weight, $shippername, $shipperaddress, $recievername, $recieveraddress, $paymode, $shipmode, $remarks, $trackid, $hdate, $htime);
             break;
 
+        case 'editgold':
+            extract($_POST);
+            editgold($gold_id, $depositer, $dob, $country, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added);
+            break;
         case 'addgold':
             extract($_POST);
             addgold($depositer, $dob, $country, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added);
@@ -32,6 +36,12 @@ if (isset($_GET['action'])) {
         case 'deletepackage':
             extract($_POST);
             deletepackage($id);
+            // code...
+            break;
+
+        case 'deletegold':
+            extract($_POST);
+            deletegold($gold_id);
             // code...
             break;
 

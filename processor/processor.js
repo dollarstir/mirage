@@ -191,6 +191,29 @@ $('.addgold').submit(function(e){
 });
 
 
+// edit gold
+
+
+$('.editgold').submit(function(e){
+
+  e.preventDefault();
+ 
+  var staff = {
+      url: 'processor/processor.php?action=editgold',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
+
 
 // edit app
 
@@ -242,6 +265,26 @@ $(document).on('click','.deletep',function(e){
       url: 'processor/processor.php?action=deletepackage',
       type: 'post',
       data: {"id": id},
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
+
+// delete gold
+
+$(document).on('click','.deleteg',function(e){
+
+  e.preventDefault();
+  
+  var id = $(this).attr('id');
+  var staff = {
+      url: 'processor/processor.php?action=deletegold',
+      type: 'post',
+      data: {"gold_id": id},
       beforeSend: before,
       success: resp
 

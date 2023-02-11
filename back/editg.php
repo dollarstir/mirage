@@ -31,11 +31,14 @@ begin('Edit Gold'); ?>
                                 </div>
                             </div>
                             
-                            <form class="addgold">
+                            <form class="editgold">
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Item </label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="item" value="<?php gdetail($myid, 'item'); ?>">
+
+                                        <input type="hidden" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="gold_id" value="<?php gdetail($myid, 'gold_id'); ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Weight </label>

@@ -349,6 +349,39 @@ function showgold()
     </tr>';
     }
 }
+
+// edit gold function
+
+function editgold($gold_id, $depositer, $dob, $country, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added)
+{
+    if (empty(trim($item))) {
+        echo 'please enter a item name';
+    } else {
+        $record = [
+            'depositer' => $depositer,
+            'dob' => $dob,
+            'country' => $country,
+            'nationality' => $nationality,
+            'gender' => $gender,
+            'occupation' => $occupation,
+            'address' => $address,
+            'next_kin' => $next_kin,
+            'item' => $item,
+            'weight' => $weight,
+            'purity' => $purity,
+            'carat' => $carat,
+            'charge' => $charge,
+            'date_added' => $date_added,
+             ];
+
+        if (update('gold', $record, ['gold_id' => $gold_id]) == 'success') {
+            echo 'Updated Successfully';
+        } else {
+            echo 'Failed to edit gold';
+        }
+    }
+}
+
 function login($email, $password)
 {
     if (authenticate('cmd', [['email', '=', $email]]) == 'success') {
@@ -397,6 +430,15 @@ function deletepackage($id)
         echo 'Deleted Successfully';
     } else {
         echo 'Failed to delete package';
+    }
+}
+
+function deletegold($gold_id)
+{
+    if (delete('gold', [['gold_id', '=', $gold_id]]) == 'success') {
+        echo 'Deleted Successfully';
+    } else {
+        echo 'Failed to delete gold';
     }
 }
 
