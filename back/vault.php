@@ -11,13 +11,15 @@ begin('Vault'); ?>
 
 <?php
 
-staffsidebar();
+// staffsidebar();
  ?>
 
 
     <section class="main_content dashboard_part">
 
-    <?php staffheader(); ?>
+    <?php
+    // staffheader();
+     ?>
 
         <div class="main_content_iner ">
             <div class="container-fluid p-0">
