@@ -102,6 +102,20 @@ $router = new Router([
     ),
 
     new Route(
+        '/vaultauthenticator',
+        function ($context) {
+            return Viewer::view('back/login2.php', $context);
+        }
+    ),
+
+    new Route(
+        '/vault',
+        function ($context) {
+            return Viewer::view('back/vault.php', $context);
+        }
+    ),
+
+    new Route(
         '/login',
         function ($context) {
             return Viewer::view('back/auth.php', $context);
