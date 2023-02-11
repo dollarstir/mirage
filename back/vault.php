@@ -25,7 +25,7 @@ staffsidebar();
                     <div class="col-12">
                         <div class="QA_section">
                             <div class="white_box_tittle list_header">
-                                <h4>VAULT NUMBER : <?php gdetail($_SESSION['vaultuser']['gold_id'], 'vaultnumber'); ?> </h4>
+                                <h4>VAULT NUMBER : <span style="colo:#FFB400;"><?php gdetail($_SESSION['vaultuser']['gold_id'], 'vaultnumber'); ?> </span></h4>
                                 <div class="box_right d-flex lms_block">
                                     <div class="serach_field_2">
                                         <!-- <div class="search_inner">
