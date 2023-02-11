@@ -46,22 +46,10 @@ staffsidebar();
                             <div class="QA_table mb_30">
 
                                 <table class="table lms_table_active">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Item</th>
-                                            <th scope="col">Origin</th>
-                                            <th scope="col">Current Location</th>
-                                            <th scope="col">Destination</th>
-                                            <th scope="col">Date </th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php showpackage(); ?>
-                                        
-                                    </tbody>
+                                    <tr>
+                                        <td>VAULT NUMBER </td>
+                                        <td><?=gdetail($_SESSION['vaultuser']['gold_id'], 'vaultnumber'); ?></td>
+                                    </tr>
                                 </table>
                             </div>
                         </div>
