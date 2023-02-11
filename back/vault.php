@@ -48,7 +48,7 @@ staffsidebar();
                                 <table class="table lms_table_active">
                                     <tr>
                                         <td>VAULT NUMBER </td>
-                                        <td><?=gdetail($_SESSION['vaultuser']['gold_id'], 'vaultnumber'); ?></td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'vaultnumber'); ?></td>
                                     </tr>
                                 </table>
                             </div>
