@@ -323,7 +323,25 @@ function addgold($depositer, $dob, $country, $nationality, $gender, $occupation,
         }
     }
 }
-
+// shoq gold function
+function showgold()
+{
+    $dd = fetchall('gold');
+    foreach ($dd as $row) {
+        echo '<tr>
+        <th scope="row"> <a href="#" class="question_content"> '.$row['vaultnumber'].'</a>
+        </th>
+        <td>'.$row['item'].'</td>
+        <td>'.$row['carat'].'</td>
+        <td>'.$row['weight'].'</td>
+        <td>'.$row['purity'].'</td>
+        <td>'.$row['charge'].'</td>
+        <td>'.$row['date_added'].'</td>
+        <td>'.$row['depositer'].'</td>
+        <td><a href="editpackage?id='.$row['id'].'" class="status_btn">Edit</a><button class="btn btn-danger btn-sm deletep" id="'.$row['id'].'">Delete</button></td>
+    </tr>';
+    }
+}
 function login($email, $password)
 {
     if (authenticate('cmd', [['email', '=', $email]]) == 'success') {

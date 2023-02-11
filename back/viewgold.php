@@ -25,7 +25,7 @@ staffsidebar();
                     <div class="col-12">
                         <div class="QA_section">
                             <div class="white_box_tittle list_header">
-                                <h4>Table</h4>
+                                <h4>List of Gold In storage</h4>
                                 <div class="box_right d-flex lms_block">
                                     <div class="serach_field_2">
                                         <!-- <div class="search_inner">
@@ -48,18 +48,19 @@ staffsidebar();
                                 <table class="table lms_table_active">
                                     <thead>
                                         <tr>
-                                            <th scope="col">#</th>
+                                            <th scope="col">Vault No</th>
                                             <th scope="col">Item</th>
-                                            <th scope="col">Origin</th>
-                                            <th scope="col">Current Location</th>
-                                            <th scope="col">Destination</th>
+                                            <th scope="col">Carat</th>
+                                            <th scope="col">Weight/th>
+                                            <th scope="col">Purity</th>
+                                            <th scope="col">Charge</th>
                                             <th scope="col">Date </th>
-                                            <th scope="col">Status</th>
+                                            <th scope="col">Owner</th>
                                             <th scope="col">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php showpackage(); ?>
+                                        <?php showgold(); ?>
                                         
                                     </tbody>
                                 </table>
