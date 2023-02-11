@@ -75,7 +75,7 @@ $router = new Router([
     ),
 
     new Route(
-        '/packages',
+        '/gold',
         function ($context) {
             return Viewer::view('back/viewgold.php', $context);
         }
