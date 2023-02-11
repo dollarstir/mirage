@@ -2,7 +2,7 @@
 mainchecker('admin', 'login');
 involve('stafffunctions');
 
-begin('Edit Gold'); ?>
+begin('Edit Package'); ?>
 
 <body class="crm_body_bg">
 
