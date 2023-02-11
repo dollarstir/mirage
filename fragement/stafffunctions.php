@@ -99,6 +99,18 @@ function begin($title)
              </ul>
          </li>
 
+         <li class="">
+             <a class="has-arrow" href="#" aria-expanded="false">
+                 <img src="back/img/menu-icon/2.svg" alt="">
+                 <span>Gold Vault</span>
+             </a>
+             <ul>
+                 <li><a href="depositgold">Deposit Gold</a></li>
+                 <li><a href="gold">View </a></li>
+                 
+             </ul>
+         </li>
+
 
          <li class="">
          <a class="has-arrow" href="#" aria-expanded="false">
