@@ -73,6 +73,13 @@ $router = new Router([
             return Viewer::view('back/addgold.php', $context);
         }
     ),
+
+    new Route(
+        '/packages',
+        function ($context) {
+            return Viewer::view('back/viewgold.php', $context);
+        }
+    ),
     new Route(
         '/packages',
         function ($context) {
