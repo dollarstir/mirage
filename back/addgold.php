@@ -88,7 +88,7 @@ begin('Deposit Gold'); ?>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Nationality</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="depositer">
+                                        placeholder="" name="nationality">
                                 </div>
 
                                 <div class="input-group mb-3">

@@ -290,6 +290,40 @@ function editpackage($id, $item, $status, $origin, $current, $destination, $pick
         }
     }
 }
+
+// add gold function
+
+function addgold($depositer, $dob, $country, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added)
+{
+    if (empty(trim($item))) {
+        echo 'please enter a item name';
+    } else {
+        $willbillnumber = rand(1111111111, 9999999999);
+        $record = [
+            'depositer' => $depositer,
+            'dob' => $dob,
+            'country' => $country,
+            'nationality' => $nationality,
+            'gender' => $gender,
+            'occupation' => $occupation,
+            'address' => $address,
+            'next_kin' => $next_kin,
+            'item' => $item,
+            'weight' => $weight,
+            'purity' => $purity,
+            'carat' => $carat,
+            'charge' => $charge,
+            'date_added' => $date_added,
+            'vaultnumber' => $willbillnumber, ];
+
+        if (insert('gold', $record) == 'success') {
+            echo 'success';
+        } else {
+            echo 'Failed to add gold';
+        }
+    }
+}
+
 function login($email, $password)
 {
     if (authenticate('cmd', [['email', '=', $email]]) == 'success') {
