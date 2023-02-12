@@ -89,7 +89,7 @@ begin('Edit Gold'); ?>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Country</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="country" value="<?php gdetail($myid, 'country'); ?>">
+                                        placeholder="" name="nation" value="<?php gdetail($myid, 'nation'); ?>">
                                 </div>
 
 

@@ -300,7 +300,7 @@ function editpackage($id, $item, $status, $origin, $current, $destination, $pick
 
 // add gold function
 
-function addgold($depositer, $dob, $country, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added)
+function addgold($depositer, $dob, $nation, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added)
 {
     if (empty(trim($item))) {
         echo 'please enter a item name';
@@ -309,7 +309,7 @@ function addgold($depositer, $dob, $country, $nationality, $gender, $occupation,
         $record = [
             'depositer' => $depositer,
             'dob' => $dob,
-            'country' => $country,
+            'nation' => $nation,
             'nationality' => $nationality,
             'gender' => $gender,
             'occupation' => $occupation,
@@ -352,7 +352,7 @@ function showgold()
 
 // edit gold function
 
-function editgold($gold_id, $depositer, $dob, $country, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added)
+function editgold($gold_id, $depositer, $dob, $nation, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added)
 {
     if (empty(trim($item))) {
         echo 'please enter a item name';
@@ -360,7 +360,7 @@ function editgold($gold_id, $depositer, $dob, $country, $nationality, $gender, $
         $record = [
             'depositer' => $depositer,
             'dob' => $dob,
-            'country' => $country,
+            'nation' => $nation,
             'nationality' => $nationality,
             'gender' => $gender,
             'occupation' => $occupation,

@@ -17,11 +17,11 @@ if (isset($_GET['action'])) {
 
         case 'editgold':
             extract($_POST);
-            editgold($gold_id, $depositer, $dob, $country, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added);
+            editgold($gold_id, $depositer, $dob, $nation, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added);
             break;
         case 'addgold':
             extract($_POST);
-            addgold($depositer, $dob, $country, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added);
+            addgold($depositer, $dob, $nation, $nationality, $gender, $occupation, $address, $next_kin, $item, $weight, $purity, $carat, $charge, $date_added);
             break;
 
         case 'editapp':

@@ -93,7 +93,7 @@ begin('Vault'); ?>
 
                                     <tr>
                                         <td>COUNTRY</td>
-                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'country'); ?></td>
+                                        <td><?php gdetail($_SESSION['vaultuser']['gold_id'], 'nation'); ?></td>
                                     </tr>
 
                                     <tr>
