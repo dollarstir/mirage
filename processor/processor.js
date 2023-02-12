@@ -208,6 +208,31 @@ $('.addgold').submit(function(e){
 });
 
 
+
+
+// contact us
+
+$('.contact').submit(function(e){
+
+  alert('hello');
+
+  // e.preventDefault();
+ 
+  // var staff = {
+  //     url: 'processor/processor.php?action=contact',
+  //     type: 'post',
+  //     data: new FormData(this),
+  //     cache: false,
+  //     contentType: false,
+  //     processData: false,
+  //     beforeSend: before,
+  //     success: resp
+
+  // };
+  // $.ajax(staff);
+});
+
+
 // edit gold
 
 
