@@ -505,3 +505,16 @@ function status()
 
     return $do;
 }
+
+function changepassword($id, $$password)
+{
+    if (empty(trim($$password))) {
+        echo 'please enter a password';
+    } else {
+        if (update('cmd', ['password' => md5($password)], ['id' => $id]) == 'success') {
+            echo 'Updated Successfully';
+        } else {
+            echo 'Failed to update password';
+        }
+    }
+}

@@ -62,6 +62,11 @@ if (isset($_GET['action'])) {
             deletestatus($id);
             // code...
             break;
+        case 'changepassword':
+            extract($_POST);
+            changepassword($id, $$password);
+            // code...
+            break;
 
         default:
 

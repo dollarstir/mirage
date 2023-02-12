@@ -297,6 +297,28 @@ $('.login').submit(function(e){
 
 
 
+// admin  change password
+
+$('.changepassword').submit(function(e){
+
+  e.preventDefault();
+ 
+  var staff = {
+      url: 'processor/processor.php?action=changepassword',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
+
 // login to vault
 
 $('.vault').submit(function(e){
