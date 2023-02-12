@@ -109,7 +109,7 @@ begin();
                                         <p>Fill The Form Bellow. And Get In Touch Immediately</p>
                                         <div class="contactform">
                                             <div id="message"></div>
-                                            <form id="contactform" method="post" action="#">
+                                            <form  class="contact">
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <input type="text" placeholder="Complete Name" class="text-field input-style" id="name" name="name" />
