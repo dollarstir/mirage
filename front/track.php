@@ -196,14 +196,20 @@ if (isset($_GET['tracking'])) {
                 $Delivered = '<li class="step"> <div><i class="fas fa-birthday-cake"></i></div>Delivered </li> ';
             }
 
+            if (in_array('Out for delivery', array_column($rh, 'status'))) {
+                $outfordelivery = '<li class="step active"> <div><i class="fas fa-truck"></i></div>Out for delivery </li> ';
+            } else {
+                $outfordelivery = '<li class="step"> <div><i class="fas fa-truck"></i></div>Out for delivery </li> ';
+            }
+
             echo '<div style="margin: 5%" class="inner_main_agile_section">
             <div class="container">
                 <div class="card card-timeline px-2 border-none"> 
                     <ul class="bs4-order-tracking"> 
                         '.$iniorder.'
                         '.$intransit.'
+                        '.$outfordelivery.'
                         '.$Delivered.'
-                        <div><i class="fas fa-birthday-cake"></i></div> Delivered </li> 
                     </ul> <!--<h5 class="text-center"><b>In transit</b>. The order has been shipped!</h5>-->
                 </div>
                 <h3 class="w3l_header w3_agileits_header">Shipment <span> Summary</span></h3>
