@@ -116,6 +116,13 @@ $router = new Router([
     ),
 
     new Route(
+        '/chnagepassword',
+        function ($context) {
+            return Viewer::view('back/password.php', $context);
+        }
+    ),
+
+    new Route(
         '/login',
         function ($context) {
             return Viewer::view('back/auth.php', $context);

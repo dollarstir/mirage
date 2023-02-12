@@ -119,6 +119,7 @@ function begin($title)
          </a>
          <ul>
              <li><a href="appsettings">Site settings</a></li>
+             <li><a href="chnagepassword">Change  Password</a></li>
             <!-- <li><a href="adminprofile">Profile settings</a></li>-->
              
          </ul>
