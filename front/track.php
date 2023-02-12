@@ -178,11 +178,34 @@ if (isset($_GET['tracking'])) {
             $rev = $rev[0];
 
             $rh = customfetch('history', [['trackid', '=', $_GET['tracking']]], '', ['id' => 'DESC']);
+            if (in_array('Order Received', array_column($rh, 'status'))) {
+                $iniorder = '<li class="step active"> <div><i class="fas fa-user"></i></div>Order Received</li> ';
+            } else {
+                $iniorder = '<li class="step"> <div><i class="fas fa-user"></i></div>Order Received </li> ';
+            }
+
+            if (in_array('In Transit For Delivery', array_column($rh, 'status'))) {
+                $intransit = '<li class="step active"> <div><i class="fas fa-bread-slice"></i></div>In transit </li> ';
+            } else {
+                $intransit = '<li class="step"> <div><i class="fas fa-bread-slice"></i></div>In transit </li> ';
+            }
+
+            if (in_array('Delivered', array_column($rh, 'status'))) {
+                $Delivered = '<li class="step active"> <div><i class="fas fa-birthday-cake"></i></div>Delivered </li> ';
+            } else {
+                $Delivered = '<li class="step"> <div><i class="fas fa-birthday-cake"></i></div>Delivered </li> ';
+            }
 
             echo '<div style="margin: 5%" class="inner_main_agile_section">
             <div class="container">
-            <div class="card card-timeline px-2 border-none"> <ul class="bs4-order-tracking"> <li class="step active"> <div><i class="fas fa-user"></i></div> Order Placed </li> <li class="step active"> <div><i class="fas fa-bread-slice"></i></div> In transit </li> <li class="step"> <div><i class="fas fa-truck"></i></div> Out for delivery </li> <li class="step "> <div><i class="fas fa-birthday-cake"></i></div> Delivered </li> </ul> <h5 class="text-center"><b>In transit</b>. The order has been shipped!</h5>
-            </div>
+                <div class="card card-timeline px-2 border-none"> 
+                    <ul class="bs4-order-tracking"> 
+                        '.$iniorder.'
+                        '.$intransit.'
+                        '.$Delivered.'
+                        <div><i class="fas fa-birthday-cake"></i></div> Delivered </li> 
+                    </ul> <!--<h5 class="text-center"><b>In transit</b>. The order has been shipped!</h5>-->
+                </div>
                 <h3 class="w3l_header w3_agileits_header">Shipment <span> Summary</span></h3>
                 <p class="sub_para_agile two"></p>
                 <div class="bs-docs-example">
