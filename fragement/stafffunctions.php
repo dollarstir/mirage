@@ -506,7 +506,7 @@ function status()
     return $do;
 }
 
-function changepassword($id, $$password)
+function changepassword($id, $password)
 {
     if (empty(trim($$password))) {
         echo 'please enter a password';

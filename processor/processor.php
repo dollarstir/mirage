@@ -64,7 +64,7 @@ if (isset($_GET['action'])) {
             break;
         case 'changepassword':
             extract($_POST);
-            changepassword($id, $$password);
+            changepassword($id, $password);
             // code...
             break;
 
