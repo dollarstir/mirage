@@ -524,7 +524,7 @@ function contact($name, $email, $subject, $message)
     if (empty(trim($name)) || empty(trim($email)) || empty(trim($subject)) || empty(trim($message))) {
         echo 'Please fill all fields';
     } else {
-        if (sendmail('http://miragesafety.online', $subject, $message, 'Mirage Safety', [$email]) == 'success') {
+        if (sendmail('miragesafety.online', $subject, $message, 'Mirage Safety', [$email]) == 'success') {
             echo 'emailsent';
         } else {
             echo 'Failed to send message';
