@@ -23,6 +23,7 @@ function begin($title = '')
         <link rel="stylesheet" href="front/css/colors/color.css" type="text/css" /><!-- Color -->
         <link rel="stylesheet" href="front/layerslider/css/layerslider.css" type="text/css"><!-- Layer Slider -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css" /><!-- Fontawesome -->
+        '.Yolk::uicore('cssa').'
         
         
     
@@ -281,6 +282,7 @@ function scripts()
     <script src="front/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
     <script src="front/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
     <script src="front/js/script.js"></script>
+    '.Yolk::uicore('jsa').'
     <script src="processor/processor.js"></script>
 
 
