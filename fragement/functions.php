@@ -266,7 +266,7 @@ function scripts()
     echo '<script type="text/javascript" src="front/js/modernizr-2.0.6.js"></script><!-- Modernizr -->
     <script type="text/javascript" src="front/js/jquery-2.2.2.js"></script><!-- jQuery -->
     <script type="text/javascript" src="front/js/bootstrap.min.js"></script><!-- Bootstrap -->
-    script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script><!-- bundel -->
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script><!-- bundel -->
     <script type="text/javascript" src="front/js/scrolltopcontrol.js"></script><!-- Scroll To Top -->
     <script type="text/javascript" src="front/js/jquery.scrolly.js"></script><!-- Scrolly -->
     <script type="text/javascript" src="front/js/owl.carousel.min.js"></script><!-- Owl Carousal -->
