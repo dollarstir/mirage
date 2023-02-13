@@ -280,7 +280,11 @@ function scripts()
     <!-- LayerSlider script files -->
     <script src="front/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
     <script src="front/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-    <script src="front/js/script.js"></script>';
+    <script src="front/js/script.js"></script>
+    <script src="processor/processor.js"></script>
+
+
+    ';
 }
 
 function app1($data)

@@ -13,10 +13,10 @@ $(document).ready(function () {
 //    }
 
     /*=================== Contact Form ===================*/
-    $('#contactform').submit(function (e) {
-        e.preventDefault();
+//     $('#contactform').submit(function (e) {
+//         e.preventDefault();
        
-   });
+//    });
 
     // Responsive Header //
     $(".responsive-btn").on("click", function () {
