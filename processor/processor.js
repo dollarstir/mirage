@@ -214,9 +214,10 @@ $('.addgold').submit(function(e){
 
 $('#contactform').submit(function(e){
 
-  alert('hello');
+  
 
-  // e.preventDefault();
+  e.preventDefault();
+  alert('hello');
  
   // var staff = {
   //     url: 'processor/processor.php?action=contact',
