@@ -212,7 +212,7 @@ $('.addgold').submit(function(e){
 
 // contact us
 
-$('.contact').submit(function(e){
+$('#contactform').submit(function(e){
 
   alert('hello');
 
