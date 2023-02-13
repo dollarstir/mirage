@@ -121,7 +121,7 @@ begin();
                                                         <input type="text" placeholder="Subject" name="subject" class="text-field input-style" />
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <textarea placeholder="Description" class="text-field input-style" id="comments" name="desc"></textarea>
+                                                        <textarea placeholder="Description" class="text-field input-style" id="comments" name="message"></textarea>
                                                     </div>
                                                     <div class="col-md-12"><div class="g-recaptcha" data-sitekey="6LelmzAUAAAAAHBE2SJeRMfnzYVxH9RMGQstUij2"></div></div>
                                                     <div class="col-md-12">

@@ -102,10 +102,29 @@ $(function(){
                   swal.showLoading();
                 },
               }).then(function (result) {
-                window.location="packages";
+                window.location.reload();
               });
 
         }
+
+
+
+        else if(response == 'emailsent'){
+
+          swal({
+              title: "Success",
+              text: "message sent successfully",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location.reload();
+            });
+
+      }
 
 
         else if(response == 'loginfailed'){
@@ -217,20 +236,19 @@ $('.contact').submit(function(e){
   
 
   e.preventDefault();
-  alert('hello');
  
-  // var staff = {
-  //     url: 'processor/processor.php?action=contact',
-  //     type: 'post',
-  //     data: new FormData(this),
-  //     cache: false,
-  //     contentType: false,
-  //     processData: false,
-  //     beforeSend: before,
-  //     success: resp
+  var staff = {
+      url: 'processor/processor.php?action=contact',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
 
-  // };
-  // $.ajax(staff);
+  };
+  $.ajax(staff);
 });
 
 

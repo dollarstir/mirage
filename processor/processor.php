@@ -68,6 +68,11 @@ if (isset($_GET['action'])) {
             // code...
             break;
 
+        case 'contact':
+            extract($_POST);
+            contact($name, $email, $subject, $message);
+            // code...
+            break;
         default:
 
         break;
