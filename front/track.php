@@ -326,7 +326,7 @@ begin();
                     
                     <div class="table-responsive">
         
-                        <table class="table table-bordered table-responsive table-hover table-striped">
+                        <table class="table table-bordered table-responsive table-hover table-striped" style="width:100%;">
                         <thead style="background-color:#ffb400">
                             <tr>
                                 <th>Date</th>
