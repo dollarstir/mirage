@@ -159,7 +159,7 @@ begin('Edit Package'); ?>
 
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Date of operation </label>
-                                    <input type="date" class="form-control" id="exampleFormControlInput1"
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="hdate">
                                 </div>
 
