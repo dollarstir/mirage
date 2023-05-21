@@ -324,9 +324,9 @@ begin();
                     <h3 class="w3l_header w3_agileits_header">Shipment <span> History</span></h3></div>
                     
                     
-                    <div class="table-responsive">
+                    <div class="table-responsive" style="width:100%;">
         
-                        <table class="table table-bordered table-responsive table-hover table-striped" style="width:100%;">
+                        <table class="table table-bordered table-responsive table-hover table-striped">
                         <thead style="background-color:#ffb400">
                             <tr>
                                 <th>Date</th>
